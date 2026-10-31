@@ -1,0 +1,7 @@
+[
+    {"id":1 ,"nombre": "Consulta general","precio":8000},
+    {"id":2 ,"nombre": "Vacunacion antirrabica" , "precio":6500},
+    {"id":3 ,"nombre": "Desparacitacion" , "precio":4500},
+    {"id":4 ,"nombre": "Cirugia menor" , "precio":25000},
+    {"id":5 ,"nombre": "Control de curaciones" , "precio":5000}
+]

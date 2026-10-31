@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- mi css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--  JS de Toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+    <!-- SweetAlert2 desde CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- paciente js -->
+     <script src="./js/pacientes.js"></script>
+    <!--storage js-->
+    <script src="./js/storage.js" defer></script>
+    <!-- mi js -->
+    <script src="./js/main.js" defer></script>
+
+    <title>Veterinaria Patitas</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Paciente</a></li>
+            <li><a href="">Agenda</a></li>
+        </ul>
+    </header>
+    <main>
+        <h1 class="titulo"> Veterinaria Patitas </h1>
+
+        <section>
+            <h2>Lista de pacientes</h2>
+
+            <search>
+                <label for="inputBuscar">Buscar pacientes o tutor</label>
+                <input type="search" id="inputBuscar" placeholder="Ej: curcuma o nancy" class="texto-input">
+            </search>
+
+            <section id="contenedorPaciente" class="card-container"></section>
+
+            <button class="btn" id="btnLimpiarStorage">Vaciar lista de pacientes</button>
+
+            <section class="form-container">
+
+                <form id="formPaciente" class="formulario">
+                    <h2>Registro de nuevo paciente</h2>
+                    <input type="text" id="nombre" placeholder="Nombre" required class="texto-input">
+                    <input type="number" id="edad" placeholder="Edad" required class="texto-input">
+                    <input type="text" id="especie" placeholder="Especie" required class="texto-input">
+                    <input type="text" id="raza" placeholder="Raza" required class="texto-input">
+                    <input type="text" id="tutor" placeholder="Tutor" required class="texto-input">
+                    <label for="selectServicio">Servicio a realizar:</label>
+                    <select id="selectServicio" required>
+                        <option value="">Seleccione un servicio </option>
+                    </select>
+                    <button type="submit" class="btn">Agregar Paciente</button>
+                </form>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <h3> PIE DE PAGINA</h3>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>
